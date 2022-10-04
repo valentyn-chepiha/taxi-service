@@ -1,4 +1,4 @@
-# taxi-service
+# taxi-service 
 
 ## Description
 This is a simple project made to show my skills in Java, JDBC, WEB, OOP, SOLID. 
@@ -11,6 +11,7 @@ One-to-one, one-to-many, and many-to-many relationships are used in databases.
 - JDBC
 - JSTL
 - JSP
+- lpg4j 2
 - TomCat 9.0.50
 - MySQL
 - Bootstrap 5
@@ -27,7 +28,13 @@ One-to-one, one-to-many, and many-to-many relationships are used in databases.
     - Display all cars for current driver
 
 ## Setup
-- Fork this project
+- Clone this project
 - Create the required tables using file resources/init_db.sql
-- Add your db configurations in util/ConnectionUtil (username, password, url)    
-- Run project using TomCat 9.0.50
+- Add your db configurations in util/ConnectionUtil (username, password, url)
+````
+    private static final String URL = "Url connection string to DB";
+    private static final String USERNAME = "USERNAME";
+    private static final String PASSWORD = "PASSWORD";
+````
+- Config TomCat
+- Run project using TomCat
