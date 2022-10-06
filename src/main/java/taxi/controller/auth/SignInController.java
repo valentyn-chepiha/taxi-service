@@ -14,7 +14,7 @@ import taxi.lib.Injector;
 import taxi.model.Driver;
 import taxi.service.AuthenticationService;
 
-@WebServlet(urlPatterns = "/signin")
+@WebServlet(urlPatterns = "/sign-in")
 public class SignInController extends HttpServlet {
     private static final Logger logger = LogManager.getLogger(SignInController.class);
     private static final Injector injector = Injector.getInstance("taxi");
