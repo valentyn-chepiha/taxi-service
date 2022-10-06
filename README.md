@@ -12,12 +12,12 @@ One-to-one, one-to-many, and many-to-many relationships are used in databases.
 - JDBC
 - JSTL
 - JSP
-- lpg4j 2
+- log4j 2
 - TomCat 9.0.50
 - MySQL
 - Bootstrap 5
 
-## Using
+## How to use
 - First, run the project.
 - You can then create an account to log into the app.
 - After that, you will have the following features:
