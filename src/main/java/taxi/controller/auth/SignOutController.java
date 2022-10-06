@@ -8,13 +8,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet(urlPatterns = "/signout")
+@WebServlet(urlPatterns = "/sign-out")
 public class SignOutController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         HttpSession session = req.getSession();
         session.invalidate();
-        resp.sendRedirect(req.getContextPath() + "/signin");
+        resp.sendRedirect(req.getContextPath() + "/sign-in");
     }
 }

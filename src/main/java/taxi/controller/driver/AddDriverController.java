@@ -10,7 +10,7 @@ import taxi.lib.Injector;
 import taxi.model.Driver;
 import taxi.service.DriverService;
 
-@WebServlet(urlPatterns = {"/drivers/add", "/signup"})
+@WebServlet(urlPatterns = {"/drivers/add", "/sign-up"})
 public class AddDriverController extends HttpServlet {
     private static final Injector injector = Injector.getInstance("taxi");
     private final DriverService driverService = (DriverService) injector
@@ -19,7 +19,7 @@ public class AddDriverController extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        if (req.getServletPath().equals("/signup")) {
+        if (req.getServletPath().equals("/sign-up")) {
             req.getRequestDispatcher("/WEB-INF/views/auth/signup.jsp").forward(req, resp);
         } else {
             req.getRequestDispatcher("/WEB-INF/views/drivers/add.jsp").forward(req, resp);
@@ -34,7 +34,7 @@ public class AddDriverController extends HttpServlet {
         driver.setLogin(req.getParameter("login"));
         driver.setPassword(req.getParameter("password"));
         driverService.create(driver);
-        if (req.getServletPath().equals("/signup")) {
+        if (req.getServletPath().equals("/sign-up")) {
             resp.sendRedirect(req.getContextPath() + "/");
         } else {
             resp.sendRedirect(req.getContextPath() + "/drivers");

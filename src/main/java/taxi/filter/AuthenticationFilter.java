@@ -20,8 +20,8 @@ public class AuthenticationFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        allowedUrls.add("/signin");
-        allowedUrls.add("/signup");
+        allowedUrls.add("/sign-in");
+        allowedUrls.add("/sign-up");
     }
 
     @Override
@@ -34,7 +34,7 @@ public class AuthenticationFilter implements Filter {
         Long driverId = (Long) session.getAttribute("driver_id");
         String servletPath = req.getServletPath();
         if (driverId == null && !allowedUrls.contains(servletPath)) {
-            resp.sendRedirect("/signin");
+            resp.sendRedirect("/sign-in");
             return;
         }
         filterChain.doFilter(req, resp);

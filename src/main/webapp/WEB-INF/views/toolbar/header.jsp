@@ -21,6 +21,6 @@
         </ul>
     </div>
     <div class="col-md-1 d-flex align-items-center">
-        <a href="${pageContext.request.contextPath}/signout" type="button" class="text-decoration-none">SignOut</a>
+        <a href="${pageContext.request.contextPath}/sign-out" type="button" class="text-decoration-none">SignOut</a>
     </div>
 </nav>

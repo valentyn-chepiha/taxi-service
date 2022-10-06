@@ -12,14 +12,14 @@
 <div class="container">
 
     <div class="offset-md-10 col-md-1 d-flex align-items-center mb-5 mt-3">
-        <a href="${pageContext.request.contextPath}/signup" type="button" class="text-decoration-none">SignUp</a>
+        <a href="${pageContext.request.contextPath}/sign-up" type="button" class="text-decoration-none">SignUp</a>
     </div>
 
     <div class="text-danger text-center">
         <h4>${errorMessage}</h4>
     </div>
     <h3>Enter login and password</h3>
-    <form method="post" action="${pageContext.request.contextPath}/signin">
+    <form method="post" action="${pageContext.request.contextPath}/sign-in">
         <div class="form-floating mb-3">
             <input type="text" class="form-control" id="login" name="login"
                    placeholder="Enter login">

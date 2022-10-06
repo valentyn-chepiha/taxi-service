@@ -12,7 +12,7 @@
 <div class="container">
     <div class="mb-5 mt-5" />
     <h3>Create new driver</h3>
-    <form method="post" action="${pageContext.request.contextPath}/signup">
+    <form method="post" action="${pageContext.request.contextPath}/sign-up">
         <div class="form-floating mb-3">
             <input type="text" class="form-control" id="login" name="login"
                    placeholder="Enter login">
