@@ -15,13 +15,13 @@
     <form method="post" action="${pageContext.request.contextPath}/manufacturers/add">
         <div class="form-floating mb-3">
             <input type="text" class="form-control" id="name" name="name"
-                   placeholder="Enter manufacturer name.">
-            <label for="name">Enter manufacturer name.</label>
+                   placeholder="Enter manufacturer name">
+            <label for="name">Enter manufacturer name</label>
         </div>
         <div class="form-floating mb-3">
             <input type="text" class="form-control" id="country" name="country"
-                   placeholder="Enter manufacturer's country.">
-            <label for="country">Enter manufacturer's country.</label>
+                   placeholder="Enter manufacturer's country">
+            <label for="country">Enter manufacturer's country</label>
         </div>
         <div class="d-md-flex justify-content-md-end">
             <button type="submit" class="btn btn-outline-primary">Create</button>

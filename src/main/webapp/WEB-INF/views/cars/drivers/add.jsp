@@ -18,8 +18,8 @@
         </div>
         <div class="form-floating mb-3">
             <input type="text" class="form-control" id="driver_id" name="driver_id"
-                   placeholder="Enter driver id.">
-            <label for="driver_id">Enter driver id.</label>
+                   placeholder="Enter driver id">
+            <label for="driver_id">Enter driver id</label>
         </div>
         <div class="d-md-flex justify-content-md-end">
             <button type="submit" class="btn btn-outline-primary">Add</button>

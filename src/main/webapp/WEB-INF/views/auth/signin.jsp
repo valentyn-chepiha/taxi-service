@@ -22,13 +22,13 @@
     <form method="post" action="${pageContext.request.contextPath}/signin">
         <div class="form-floating mb-3">
             <input type="text" class="form-control" id="login" name="login"
-                   placeholder="Enter login.">
-            <label for="login">Enter login.</label>
+                   placeholder="Enter login">
+            <label for="login">Enter login</label>
         </div>
         <div class="form-floating mb-3">
             <input type="password" class="form-control" id="password" name="password"
-                   placeholder="Enter password.">
-            <label for="password">Enter password.</label>
+                   placeholder="Enter password">
+            <label for="password">Enter password</label>
         </div>
         <div class="d-md-flex justify-content-md-end">
             <button type="submit" class="btn btn-outline-primary">SignIn</button>
